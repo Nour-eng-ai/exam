@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title></title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <div class="container mt-3">
+        <form class="form-container">
+            <div class="row">
+                <div class="col-auto">
+                    <input type="text" class="form-control custom-width" placeholder="Fruits or Legumes" name="item" id="item">
+                </div>
+                <div class="col">
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="category" id="fruit" value="fruit">
+                        <label class="form-check-label" for="fruit">Fruits</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="category" id="legume" value="legume">
+                        <label class="form-check-label" for="legume">Legumes</label>
+                    </div>
+                </div>
+                <div class="col-auto ml-auto">
+                    <button type="button" class="btn btn-primary" id="addSpecific">Add to specific list</button>
+                    <button type="button" class="btn btn-danger" id="addGeneral">Add to general list</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+
+<div class="container2">
+    <form class="form-container" style="border-bottom: 1px solid blue;">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <button type="button" class="btn btn-primary" id="search">Search for item</button>
+                <button type="button" class="btn btn-danger" id="delete">Delete an item</button>
+            </div>
+            <div class="col-auto">
+                <input type="search" class="form-control search" placeholder="Search for fruits or Legumes" name="search" id="searchInput">
+            </div>
+        </div>
+    </form>
+    <br><br><br>
+
+    <div class="row">
+        <div class="col">
+            <h3 class="card-title">List of Fruits</h3>
+            <div class="card">
+                <div class="card-body">          
+                    <ul id="fruitList" class="list">
+                        <li>Fruits! - Apple</li>
+                        <li>Fruits! - Mangoes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h3 class="card-title">List of Fruits & Legumes</h3>
+            <div class="card">
+                <div class="card-body">          
+                    <ul id="generalList" class="list">
+                        <li>Fruits! - Pineapples</li>
+                        <li>Fruits! - Bananas</li>
+                        <li>Legumes! - Potato</li>
+                        <li>Legumes! - Lentils</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h3 class="card-title">List of Legumes</h3>
+            <div class="card" style="width: 400px;">
+                <div class="card-body">          
+                    <ul id="legumeList" class="list">
+                        <li>Legumes! - Broccoli</li>
+                        <li>Legumes! - Green Beans</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="app.js">
+
+
+</script>
+</body>
+</html>
+
